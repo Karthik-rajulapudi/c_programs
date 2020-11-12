@@ -1,0 +1,19 @@
+// palindrome or not
+#include<stdio.h>
+int main()
+{
+    int n,r,a,s;
+    scanf("%d",&n);
+    a = n;
+    s = 0;
+    while(a != 0)
+    {
+        r = a % 10;
+        s = 10*s + r;
+        a = a/10;
+    }
+    if(s == n)
+        printf("it is a palindrome");
+    else
+        printf("it is not a palindrome");
+}
